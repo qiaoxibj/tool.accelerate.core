@@ -30,6 +30,15 @@ Inside the application project there is a application.springboot.web package con
 
 Inside the wlpcfg project there is the <code>it.springboot.web.HelloControllerTest</code> that will test the Spring MVC endpoint to ensure it is working.
 
+## Spring Boot with Jersey
+This provides you with a SpringBoot application that will run on WebSphere Liberty.
+
+Inside the application project there is a application.springboot.jersey package containing 6 classes:
+* SampleJerseyApplication</code>: The entry point for the SpringBoot application.
+* Endpoint</code>: A Jersey endpoint which you can access at /springbootjersey.
+
+Inside the wlpcfg project there is the <code>it.springboot.jersey.SampleJerseyApplicationTests</code> that will test the Jersey endpoint to ensure it is working.
+
 ## Websockets
 This provides you with the websocket-1.1 feature.
 

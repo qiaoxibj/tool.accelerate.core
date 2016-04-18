@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/ 
-package com.ibm.liberty.starter.service.springboot.api.v1.it;
+package com.ibm.liberty.starter.service.springboot.jersey.api.v1.it;
 
 import static org.junit.Assert.assertTrue;
 
