@@ -12,25 +12,14 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *******************************************************************************/ 
-package it.springboot.web;
+ *******************************************************************************/
+package com.ibm.liberty.starter.service.springboot.jersey.api;
 
-import static org.junit.Assert.assertTrue;
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.Invocation;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.Response;
-import it.EndpointTest;
+@ApplicationPath("api")
+public class TechnologyAPI extends Application {
 
-import org.junit.Test;
 
-public class HelloControllerTest extends EndpointTest {
-
-    
-    @Test
-    public void testDeployment() {
-        testEndpoint("/springbootweb", "Hello from Spring Boot MVC running on Liberty!");
-    }
 }
