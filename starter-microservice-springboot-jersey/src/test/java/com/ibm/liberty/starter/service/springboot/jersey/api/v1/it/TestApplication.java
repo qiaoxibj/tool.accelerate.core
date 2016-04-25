@@ -40,26 +40,26 @@ public class TestApplication extends EndpointTest {
     public void testProvider() throws Exception {
         Provider provider =  testEndpoint("/api/v1/provider/", Provider.class);
         assertNotNull("No response from API for provider", provider);
-        assertTrue("Description was not found.", provider.getDescription().contains("<h2>Spring Boot with Spring MVC</h2>"));
+        assertTrue("Description was not found.", provider.getDescription().contains("<h2>Spring Boot with Jersey</h2>"));
         Dependency[] dependencies = provider.getDependencies();
         boolean providedDependency = false;
         boolean runtimeDependency = false;
         boolean compileDependency = false;
         for (Dependency dependency : dependencies) {
             if (Dependency.Scope.PROVIDED.equals(dependency.getScope())) {
-                assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springboot".equals(dependency.getGroupId()));
+                assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springboot.jersey".equals(dependency.getGroupId()));
                 assertTrue("artifactId incorrect.", "provided-pom".equals(dependency.getArtifactId()));
                 assertTrue("version incorrect.", "0.0.1".equals(dependency.getVersion()));
                 providedDependency = true;
             }
             if (Dependency.Scope.RUNTIME.equals(dependency.getScope())) {
-                assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springboot".equals(dependency.getGroupId()));
+                assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springboot.jersey".equals(dependency.getGroupId()));
                 assertTrue("artifactId incorrect.", "runtime-pom".equals(dependency.getArtifactId()));
                 assertTrue("version incorrect.", "0.0.1".equals(dependency.getVersion()));
                 runtimeDependency = true;
             }
             if (Dependency.Scope.COMPILE.equals(dependency.getScope())) {
-                assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springboot".equals(dependency.getGroupId()));
+                assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springboot.jersey".equals(dependency.getGroupId()));
                 assertTrue("artifactId incorrect.", "compile-pom".equals(dependency.getArtifactId()));
                 assertTrue("version incorrect.", "0.0.1".equals(dependency.getVersion()));
                 compileDependency = true;
@@ -84,7 +84,7 @@ public class TestApplication extends EndpointTest {
     	Sample sample = testEndpoint("/api/v1/provider/samples", Sample.class);
     	assertNotNull("No response from API for sample", sample);
     	assertNotNull("Expected locations", sample.getLocations());
-    	assertEquals("No files were expected for sample", 3, sample.getLocations().length);
+    	assertEquals("No files were expected for sample", 5, sample.getLocations().length);
     }
 
 }
