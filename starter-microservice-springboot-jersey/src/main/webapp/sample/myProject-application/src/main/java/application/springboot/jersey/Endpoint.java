@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Component
-@Path("/springbootjersey")
+@Path("/")
 public class Endpoint {
 
 	private final Service service;
@@ -44,21 +44,4 @@ public class Endpoint {
 	public String message() {
 		return "Hello " + this.service.message();
 	}
-
-	private class SimpleClass {
-		@SuppressWarnings("unused")
-		public String foo = "bar";
-		@SuppressWarnings("unused")
-		public String foo2 = "ba2r";
-	}
-	
-	@GET
-	@Path("world")
-	@Produces(MediaType.APPLICATION_JSON)
-	public SimpleClass messageJson() {
-		SimpleClass simpleClass = new SimpleClass();
-		simpleClass.foo2 = objectMapper.toString();
-		return simpleClass;
-	}
-
 }

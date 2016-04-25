@@ -16,16 +16,17 @@
 
 package application.springboot.jersey;
 
+import javax.ws.rs.ApplicationPath;
+
 import org.glassfish.jersey.server.ResourceConfig;
+import org.glassfish.jersey.servlet.ServletProperties;
 import org.springframework.stereotype.Component;
 
 @Component
+@ApplicationPath("/springbootjersey/")
 public class JerseyConfig extends ResourceConfig {
 
 	public JerseyConfig() {
 		register(Endpoint.class);
-		register(ReverseEndpoint.class);
-		register(ObjectMapperContextResolver.class);
 	}
-
 }
