@@ -36,6 +36,12 @@
             "description": "Spring Boot with Jersey",
             "endpoint" : "/springbootjersey"
         },
+         {
+            "id": "springbootsecure",
+            "name": "Spring Boot with Security",
+            "description": "Spring Boot with Security",
+            "endpoint" : "/springbootsecurity"
+        },
         {
             "id": "watsonsdk",
             "name": "Watson SDK",
