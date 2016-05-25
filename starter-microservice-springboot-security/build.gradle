@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 */ 
-
 apply from: '../common-java.gradle'
 apply from: '../common-war.gradle'
 
@@ -30,7 +29,7 @@ buildutils {
 }
 
 task installAllPOMs(type: MavenTask) {
-	id 'springbootsecure'
+	id 'springbootsecurity'
 	hasProvided true
 	hasRuntime true
 	hasCompile true

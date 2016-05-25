@@ -37,7 +37,7 @@
             "endpoint" : "/springbootjersey"
         },
          {
-            "id": "springbootsecure",
+            "id": "springbootsecurity",
             "name": "Spring Boot with Security",
             "description": "Spring Boot with Security",
             "endpoint" : "/springbootsecurity"
