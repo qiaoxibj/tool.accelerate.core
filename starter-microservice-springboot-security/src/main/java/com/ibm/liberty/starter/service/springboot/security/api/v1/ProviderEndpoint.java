@@ -37,7 +37,7 @@ import com.ibm.liberty.starter.api.v1.model.provider.Tag;
 @Path("v1/provider")
 public class ProviderEndpoint {
     
-    private static final String DEPENDENCY_URL = "http://localhost:9082/springboot/artifacts/net/wasdev/wlp/starters/springbootsecure";
+    private static final String DEPENDENCY_URL = "http://localhost:9082/springboot/artifacts/net/wasdev/wlp/starters/springbootsecurity";
 
     @GET
     @Path("/")
@@ -53,19 +53,19 @@ public class ProviderEndpoint {
         details.setRepoUrl(repoLocation);
         Dependency providedDependency = new Dependency();
         providedDependency.setScope(Scope.PROVIDED);
-        providedDependency.setGroupId("net.wasdev.wlp.starters.springboot.secure");
+        providedDependency.setGroupId("net.wasdev.wlp.starters.springbootsecurity");
         providedDependency.setArtifactId("provided-pom");
         providedDependency.setVersion("0.0.1");
      
         Dependency runtimeDependency = new Dependency();
         runtimeDependency.setScope(Scope.RUNTIME);
-        runtimeDependency.setGroupId("net.wasdev.wlp.starters.springboot.secure");
+        runtimeDependency.setGroupId("net.wasdev.wlp.starters.springbootsecurity");
         runtimeDependency.setArtifactId("runtime-pom");
         runtimeDependency.setVersion("0.0.1");
         
         Dependency compileDependency = new Dependency();
         compileDependency.setScope(Scope.COMPILE);
-        compileDependency.setGroupId("net.wasdev.wlp.starters.springboot.secure");
+        compileDependency.setGroupId("net.wasdev.wlp.starters.springbootsecurity");
         compileDependency.setArtifactId("compile-pom");
         compileDependency.setVersion("0.0.1");
      

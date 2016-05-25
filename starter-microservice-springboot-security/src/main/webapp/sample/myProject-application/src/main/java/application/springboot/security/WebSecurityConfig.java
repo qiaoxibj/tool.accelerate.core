@@ -14,15 +14,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
             .authorizeRequests()
-                .antMatchers("/springbootsecurity", "/springbootsecurity/home").permitAll()
-                .anyRequest().authenticated()
+                .antMatchers("/springbootsecurity/hello").hasRole("USER")                
                 .and()
             .formLogin()
                 .loginPage("/springbootsecurity/login")
                 .permitAll()
                 .and()
             .logout()
-                .permitAll();
+                .permitAll();        
     }
 
     @Autowired
