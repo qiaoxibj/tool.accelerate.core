@@ -16,11 +16,8 @@
 
 package application.springboot.jersey;
 
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -30,18 +27,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Component
 @Path("/")
 public class Endpoint {
-
-	private final Service service;
-	private final ObjectMapper objectMapper;
+	private ObjectMapper objectMapper;
 
 	@Autowired
-	public Endpoint(Service service, ObjectMapper objectMapper) {
-		this.service = service;
+	public Endpoint(ObjectMapper objectMapper) {
 		this.objectMapper = objectMapper;
 	}
 
 	@GET
 	public String message() {
-		return "Hello " + this.service.message();
+		return "Hello World";
 	}
 }
