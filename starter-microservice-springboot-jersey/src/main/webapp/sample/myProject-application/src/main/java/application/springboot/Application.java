@@ -1,4 +1,4 @@
-package application.springboot.security;
+package application.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
