@@ -34,7 +34,7 @@ For the complete feature documentation, see the <a href="http://spring.io/guides
 ## Spring Boot with Jersey
 This provides you with a SpringBoot application that will run on WebSphere Liberty.
 
-Inside the application project there is a application.springboot.jersey package containing 4 classes:
+Inside the application project there is a application.springboot.jersey package containing 3 classes:
 * Application</code>: The entry point for the SpringBoot application.
 * Endpoint</code>: A Jersey endpoint which you can access at /springbootjersey.
 * JerseyConfig</code>: Jersey configuration class.
