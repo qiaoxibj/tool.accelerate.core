@@ -13,7 +13,6 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/springbootsecurity").setViewName("security-home");
         registry.addViewController("/springbootsecurity/hello").setViewName("security-hello");
         registry.addViewController("/springbootsecurity/login").setViewName("security-login");
-        registry.addViewController("/springbootsecurity/logout").setViewName("security-home");
     }
 
 }
