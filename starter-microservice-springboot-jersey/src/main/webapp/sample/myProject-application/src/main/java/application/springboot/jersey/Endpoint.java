@@ -36,6 +36,6 @@ public class Endpoint {
 
 	@GET
 	public String message() {
-		return "Hello World";
+		return "Hello from the SpringBoot Jersey endpoint!";
 	}
 }
