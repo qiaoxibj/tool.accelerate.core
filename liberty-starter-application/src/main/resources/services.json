@@ -43,6 +43,13 @@
             "endpoint" : "/springbootsecurity"
         },
         {
+            "id": "springbootjdbc",
+            "name": "Spring Boot with JDBC",
+            "description": "Spring Boot with JDBC",
+            "endpoint" : "/springbootjdbc"
+        },
+
+        {
             "id": "watsonsdk",
             "name": "Watson SDK",
             "description": "Adds the Watson SDK dependency to the project, allowing you to integrate Watson services",

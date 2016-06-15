@@ -23,7 +23,7 @@ import org.glassfish.jersey.servlet.ServletProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ApplicationPath("/springbootjersey/")
+@ApplicationPath("/springbootjersey")
 public class JerseyConfig extends ResourceConfig {
 
 	public JerseyConfig() {

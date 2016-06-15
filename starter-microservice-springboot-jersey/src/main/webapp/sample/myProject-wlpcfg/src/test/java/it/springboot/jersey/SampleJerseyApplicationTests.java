@@ -30,6 +30,6 @@ import org.junit.Test;
 public class SampleJerseyApplicationTests extends EndpointTest {
     @Test
     public void testJerseyApplication() {
-        testEndpoint("/springbootjersey", "Hello World");
+        testEndpoint("/springbootjersey", "Hello from the SpringBoot Jersey endpoint!");
     }
 }
