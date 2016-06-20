@@ -25,9 +25,9 @@ For the complete feature documentation, see the <a href="http://www.ibm.com/supp
 This project demonstrate a "hello world" web site with Spring technology and run on IBM WebSphere Liberty Server 
 Learn more about IBM WebSphere Liberty, visit <a href="https://developer.ibm.com/wasdev/">https://developer.ibm.com/wasdev/</a>
 	
-Inside the application project there is a application.springboot.web package containing two classes:
-* Application</code>: The entry point for the SpringBoot application.
-* LibertyHelloController</code>: A Spring MVC endpoint which you can access at /springbootweb.
+Inside the application project containing two classes:
+* application.springboot.Application</code>: The entry point for the SpringBoot application.
+* application.springboot.web.LibertyHelloController</code>: A Spring MVC endpoint which you can access at /springbootweb.
 
 Inside the wlpcfg project there is the <code>it.springboot.web.HelloControllerTest</code> that will test the Spring MVC endpoint to ensure it is working.
 For the complete feature documentation, see the <a href="http://spring.io/guides/gs/serving-web-content">Serving Web Content with Spring MVC</a>
@@ -37,10 +37,10 @@ This project demonstrate creating a "hello world" RESTful web service with Sprin
 Learn more about IBM WebSphere Liberty, visit <a href="https://developer.ibm.com/wasdev/">https://developer.ibm.com/wasdev/</a> 
 
 
-Inside the application project there is a application.springboot.jersey package containing 3 classes:
-* Application</code>: The entry point for the SpringBoot application.
-* Endpoint</code>: A Jersey endpoint which you can access at /springbootjersey.
-* JerseyConfig</code>: Jersey configuration class.
+Inside the application project containing 3 classes:
+* application.springboot.Application</code>: The entry point for the SpringBoot application.
+* application.springboot.jersey.Endpoint</code>: A Jersey endpoint which you can access at /springbootjersey.
+* application.springboot.jersey.JerseyConfig</code>: Jersey configuration class.
 
 Inside the wlpcfg project there is the <code>it.springboot.jersey.SampleJerseyApplicationTests</code> that will test the Jersey endpoint to ensure it is working.
 
@@ -51,10 +51,10 @@ This project demonstrate creating a simple web application with resources that a
 Learn more about IBM WebSphere Liberty, visit <a href="https://developer.ibm.com/wasdev/">https://developer.ibm.com/wasdev/</a>
 	
 	
-Inside the application project there is a application.springboot.security package containing 3 classes:
-* Application</code>: The entry point for the SpringBoot application.
-* MvcConfig</code>: Map each uri to static html resources
-* WebSecurityConfig</code>: Seucirty configuration for Springboot application
+Inside the application project containing 3 classes:
+* application.springboot.Application</code>: The entry point for the SpringBoot application.
+* application.springboot.securityMvcConfig</code>: Map each uri to static html resources
+* application.springboot.security.WebSecurityConfig</code>: Seucirty configuration for Springboot application
 
 Inside the wlpcfg project there is the <code>it.springboot.security.HelloControllerTest</code> that will test the /springbootsecurity endpoint to ensure it is working.
 
@@ -64,10 +64,10 @@ For the complete feature documentation, see the <a href="http://spring.io/guides
 This project demonstrate how to accessing relational data with Spring technology and run on IBM WebSphere Liberty Server 
 Learn more about IBM WebSphere Liberty, visit <a href="https://developer.ibm.com/wasdev/">https://developer.ibm.com/wasdev/</a>
 
-Inside the application project there is a application.springboot.jdbc package containing 3 classes:
-* Application</code>: The entry point for the SpringBoot application.
-* Customer</code>: POJO class for DB table
-* JDBCController</code>: A Springboot JDBC endpoint which implements the JDBC DB access
+Inside the application project containing 3 classes:
+* application.springboot.Application</code>: The entry point for the SpringBoot application.
+* application.springboot.jdbc.Customer</code>: POJO class for DB table
+* application.springboot.jdbc.JDBCController</code>: A Springboot JDBC endpoint which implements the JDBC DB access
 
 Inside the wlpcfg project there is the <code>it.springboot.jdbc.HelloControllerTest</code> that will test the /springbootjdbc endpoint to ensure it is working.
 
