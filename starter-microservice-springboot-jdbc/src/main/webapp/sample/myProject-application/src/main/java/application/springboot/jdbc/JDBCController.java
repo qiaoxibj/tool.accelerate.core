@@ -77,6 +77,7 @@ public class JDBCController {
 			// Clear environment for next execution
 			jdbcTemplate.execute("DROP TABLE customers");
 			jdbcTemplate.execute("DROP SCHEMA sa RESTRICT");
+			result += "All SQL operation done successfully!<br>";
 			return result;
 		} catch (Exception e) {
 			e.printStackTrace();

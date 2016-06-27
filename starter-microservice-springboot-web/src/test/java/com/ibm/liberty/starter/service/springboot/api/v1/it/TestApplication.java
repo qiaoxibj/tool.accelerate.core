@@ -84,7 +84,7 @@ public class TestApplication extends EndpointTest {
     	Sample sample = testEndpoint("/api/v1/provider/samples", Sample.class);
     	assertNotNull("No response from API for sample", sample);
     	assertNotNull("Expected locations", sample.getLocations());
-    	assertEquals("No files were expected for sample", 3, sample.getLocations().length);
+    	assertEquals("3 files were expected for sample", 3, sample.getLocations().length);
     }
 
 }

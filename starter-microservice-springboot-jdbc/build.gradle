@@ -30,10 +30,12 @@ buildutils {
 }
 
 task installAllPOMs(type: MavenTask) {
-	id 'springbootjdbc'
-	hasProvided true
-	hasRuntime true
-	hasCompile true
+    id 'springbootjdbc'
+    def String[] localVersion = ['0.0.1', '0.0.2']
+    pomVersion localVersion
+    hasProvided true
+    hasRuntime true
+    hasCompile true
 }
 
 task fvt(type: FvtTask) {

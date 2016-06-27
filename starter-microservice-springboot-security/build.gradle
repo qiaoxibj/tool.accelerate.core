@@ -29,10 +29,12 @@ buildutils {
 }
 
 task installAllPOMs(type: MavenTask) {
-	id 'springbootsecurity'
-	hasProvided true
-	hasRuntime true
-	hasCompile true
+    id 'springbootsecurity'
+    def String[] localVersion = ['0.0.1', '0.0.2']
+    pomVersion localVersion
+    hasProvided true
+    hasRuntime true
+    hasCompile true
 }
 
 task fvt(type: FvtTask) {

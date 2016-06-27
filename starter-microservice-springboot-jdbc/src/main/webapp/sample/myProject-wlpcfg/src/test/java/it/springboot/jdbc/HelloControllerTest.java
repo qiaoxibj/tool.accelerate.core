@@ -31,6 +31,6 @@ public class HelloControllerTest extends EndpointTest {
     
     @Test
     public void testDeployment() {
-        testEndpoint("/springbootjdbc", "Welcome to Springboot JDBC running on Liberty!");
+        testEndpoint("/springbootjdbc", "All SQL operation done successfully!");
     }
 }

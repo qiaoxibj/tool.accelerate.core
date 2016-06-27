@@ -49,19 +49,19 @@ public class TestApplication extends EndpointTest {
             if (Dependency.Scope.PROVIDED.equals(dependency.getScope())) {
                 assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springbootjdbc".equals(dependency.getGroupId()));
                 assertTrue("artifactId incorrect.", "provided-pom".equals(dependency.getArtifactId()));
-                assertTrue("version incorrect.", "0.0.1".equals(dependency.getVersion()));
+                assertTrue("version incorrect.", "0.0.2".equals(dependency.getVersion()));
                 providedDependency = true;
             }
             if (Dependency.Scope.RUNTIME.equals(dependency.getScope())) {
                 assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springbootjdbc".equals(dependency.getGroupId()));
                 assertTrue("artifactId incorrect.", "runtime-pom".equals(dependency.getArtifactId()));
-                assertTrue("version incorrect.", "0.0.1".equals(dependency.getVersion()));
+                assertTrue("version incorrect.", "0.0.2".equals(dependency.getVersion()));
                 runtimeDependency = true;
             }
             if (Dependency.Scope.COMPILE.equals(dependency.getScope())) {
                 assertTrue("groupId incorrect.", "net.wasdev.wlp.starters.springbootjdbc".equals(dependency.getGroupId()));
                 assertTrue("artifactId incorrect.", "compile-pom".equals(dependency.getArtifactId()));
-                assertTrue("version incorrect.", "0.0.1".equals(dependency.getVersion()));
+                assertTrue("version incorrect.", "0.0.2".equals(dependency.getVersion()));
                 compileDependency = true;
             }
         }
@@ -84,7 +84,7 @@ public class TestApplication extends EndpointTest {
     	Sample sample = testEndpoint("/api/v1/provider/samples", Sample.class);
     	assertNotNull("No response from API for sample", sample);
     	assertNotNull("Expected locations", sample.getLocations());
-    	assertEquals("No files were expected for sample", 4, sample.getLocations().length);
+    	assertEquals("4 files were expected for sample", 4, sample.getLocations().length);
     }
 
 }

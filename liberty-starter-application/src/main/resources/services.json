@@ -3,37 +3,37 @@
         {
             "id" : "rest",
             "name" : "REST",
-            "description" : "REST technology allows to create a simple JAX-RS application by using Liberty jaxrs-2.0 feature. \nNotice that REST technology cannot co-exist with Spring Boot with Jersey technology.",
+            "description" : "Create a simple JAX-RS application by using Liberty jaxrs-2.0 feature. \nNotice: Liberty REST feature cannot co-exist with Spring Boot Jersey technology.",
             "endpoint" : "/rest"
         },
         {
             "id" : "websocket",
             "name" : "Web Sockets",
-            "description" : "Web Sockets technology allows to create a simple WebSocket application by using Liberty websocket-1.1 feature.",
+            "description" : "Create a simple WebSocket application by using Liberty websocket-1.1 feature.",
             "endpoint" : "/websocket"
         },
         {
             "id" : "persistence",
             "name" : "Persistence",
-            "description" : "Persistence technology allows to create a simple JPA data persistence application by using Liberty jpa-2.1 feature.",
+            "description" : "Create a simple JPA data persistence application by using Liberty jpa-2.1 feature.",
             "endpoint" : "/persistence"
         },
         {
             "id": "web",
             "name" : "Servlet",
-            "description": "Servlet technology allows to create a simple Servlet 3.1 application by using Liberty servlet-3.1 feature.",
+            "description": "Create a simple Servlet 3.1 application by using Liberty servlet-3.1 feature.",
             "endpoint" : "/web"
         },
         {
             "id": "springbootweb",
             "name": "Spring Boot with Spring MVC",
-            "description": "Spring Boot with Spring MVC technology allows to create a hello world web application with SpringBoot MVC.",
+            "description": "Spring Boot with Spring MVC technology allows to create a 'hello world' web application with SpringBoot MVC.",
             "endpoint" : "/springbootweb"
         },
         {
             "id": "springbootjersey",
             "name": "Spring Boot with Jersey",
-            "description": "Spring Boot with Jersey technology allows to create a JAX-RS application with SpringBoot Jersey support. \nNotice that Spring Boot with Jersey technology cannot co-exist with REST technology.",
+            "description": "Spring Boot with Jersey technology allows to create a JAX-RS application with SpringBoot Jersey support. \nNotice: Spring Boot Jersey technology cannot co-exist with Liberty REST feature.",
             "endpoint" : "/springbootjersey"
         },
          {
@@ -51,7 +51,7 @@
         {
             "id": "watsonsdk",
             "name": "Watson SDK",
-            "description": "Adds the Watson SDK dependency to the project, allowing you to integrate Watson services",
+            "description": "Adds the Watson SDK dependency to the project, allowing you to integrate Watson services.",
             "endpoint" : "/watsonsdk"
         }
     ]

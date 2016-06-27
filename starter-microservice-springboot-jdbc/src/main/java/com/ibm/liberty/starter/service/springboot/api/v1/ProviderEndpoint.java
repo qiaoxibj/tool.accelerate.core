@@ -55,19 +55,19 @@ public class ProviderEndpoint {
         providedDependency.setScope(Scope.PROVIDED);
         providedDependency.setGroupId("net.wasdev.wlp.starters.springbootjdbc");
         providedDependency.setArtifactId("provided-pom");
-        providedDependency.setVersion("0.0.1");
+        providedDependency.setVersion("0.0.2");
      
         Dependency runtimeDependency = new Dependency();
         runtimeDependency.setScope(Scope.RUNTIME);
         runtimeDependency.setGroupId("net.wasdev.wlp.starters.springbootjdbc");
         runtimeDependency.setArtifactId("runtime-pom");
-        runtimeDependency.setVersion("0.0.1");
+        runtimeDependency.setVersion("0.0.2");
         
         Dependency compileDependency = new Dependency();
         compileDependency.setScope(Scope.COMPILE);
         compileDependency.setGroupId("net.wasdev.wlp.starters.springbootjdbc");
         compileDependency.setArtifactId("compile-pom");
-        compileDependency.setVersion("0.0.1");
+        compileDependency.setVersion("0.0.2");
      
         Dependency[] dependencies = {providedDependency, runtimeDependency, compileDependency};
         details.setDependencies(dependencies);
